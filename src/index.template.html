@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050605">
+
+  <title>{{META_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="keywords" content="{{META_KEYWORDS}}">
+  <meta name="robots" content="{{ROBOTS_META}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="{{BRAND}}">
+  <meta property="og:title" content="{{META_TITLE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="{{BRAND}} — montagem e desmontagem de móveis na Grande São Paulo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{META_TITLE}}">
+  <meta name="twitter:description" content="{{META_DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+  <meta name="twitter:image:alt" content="{{BRAND}} — montagem e desmontagem de móveis na Grande São Paulo">
+
+  <link rel="icon" type="image/svg+xml" href="{{FAVICON_DATA_URI}}">
+
+  <link rel="preload" href="assets/fonts/sora-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="assets/img/hero-montagem-moveis-1080.webp" imagesrcset="assets/img/hero-montagem-moveis-480.webp 480w, assets/img/hero-montagem-moveis-720.webp 720w, assets/img/hero-montagem-moveis-1080.webp 1080w" imagesizes="(max-width: 640px) calc(100vw - 72px), (max-width: 980px) 520px, 462px" fetchpriority="high">
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.LC_CONFIG = {{SITE_CONFIG_JSON}};
+  </script>
+  <script src="assets/js/app.js" defer></script>
+
+  <style>
+{{CRITICAL_CSS}}
+  </style>
+
+  <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "{{SITE_URL}}/#business",
+        "name": "{{BRAND}}",
+        "url": "{{SITE_URL}}/",
+        "slogan": "{{SLOGAN}}",
+        "description": "Montagem, desmontagem, ajustes e regulagens de móveis na Grande São Paulo.",
+        "telephone": "+{{WHATSAPP_PHONE}}",
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Grande São Paulo" },
+          { "@type": "City", "name": "Taboão da Serra" },
+          { "@type": "City", "name": "Carapicuíba" }
+        ],
+        "knowsAbout": [
+          "Montagem de móveis",
+          "Desmontagem de móveis",
+          "Ajustes de móveis",
+          "Regulagem de portas, gavetas, dobradiças e ferragens"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+{{WHATSAPP_PHONE}}",
+          "contactType": "customer service",
+          "availableLanguage": "Portuguese",
+          "url": "{{WHATSAPP_URL}}"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{SITE_URL}}/#website",
+        "url": "{{SITE_URL}}/",
+        "name": "{{BRAND}}",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "{{SITE_URL}}/#business" }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">{{FAQ_SCHEMA_JSON}}</script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="LC Montagem - início">
+        <img class="brand-logo" src="assets/img/logo-lc-montagem.png" alt="LC Montagem" width="480" height="185">
+      </a>
+      <a class="btn btn-primary header-cta" id="btn-header-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="header" data-service="orcamento_geral" aria-label="Solicitar orçamento pelo WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+        <span class="header-cta-full">Solicitar orçamento</span>
+        <span class="header-cta-short">Orçamento</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Montador de móveis na Grande São Paulo</p>
+          <h1 id="hero-title"><span class="accent">Montagem e desmontagem</span> de móveis na Grande São Paulo</h1>
+          <p class="hero-lead">Conte com a experiência da LC Montagem para montar, desmontar e ajustar seus móveis. São 20 anos de experiência e 180 dias de garantia nos serviços.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" id="btn-hero-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="hero" data-service="orcamento_geral">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+              Solicitar orçamento no WhatsApp
+            </a>
+            <span class="hero-note">Fale direto com a equipe da LC Montagem.</span>
+          </div>
+          <ul class="trust-list">
+            <li>
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg>
+              20 anos de experiência
+            </li>
+            <li>
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 19 6v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+              180 dias de garantia
+            </li>
+            <li>
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Atendimento na Grande São Paulo
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-top">
+              <span class="visual-status">Grande São Paulo</span>
+            </div>
+            <div class="hero-media">
+              <picture>
+                <source type="image/webp" srcset="assets/img/hero-montagem-moveis-480.webp 480w, assets/img/hero-montagem-moveis-720.webp 720w, assets/img/hero-montagem-moveis-1080.webp 1080w" sizes="(max-width: 640px) calc(100vw - 72px), (max-width: 980px) 520px, 462px">
+                <img class="hero-image" src="assets/img/hero-montagem-moveis.jpg" alt="Montagem de móveis realizada pela LC Montagem na Grande São Paulo" width="1080" height="1080" fetchpriority="high" decoding="async">
+              </picture>
+            </div>
+            <div class="visual-stats">
+              <div class="visual-stat"><strong>20</strong><span>anos de experiência</span></div>
+              <div class="visual-stat"><strong>180</strong><span>dias de garantia</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="furniture-rail">
+      <div class="container">
+        <ul>
+          <li>Guarda-roupas</li>
+          <li>Camas</li>
+          <li>Cômodas</li>
+          <li>Racks</li>
+          <li>Estantes</li>
+          <li>Mesas</li>
+          <li>Armários</li>
+          <li>Móveis de escritório</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section" id="diferenciais" aria-labelledby="diferenciais-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Nossos diferenciais</p>
+          <h2 class="section-title" id="diferenciais-title">Por que escolher a LC Montagem?</h2>
+          <p class="section-lead">Experiência, cuidado e compromisso com um serviço bem executado.</p>
+        </div>
+        <div class="cards-grid features-grid">
+          <article class="feature-card">
+            <span class="feature-index" aria-hidden="true">01</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>20 anos de experiência</h3>
+            <p>São 20 anos de experiência com montagem e desmontagem de móveis, oferecendo conhecimento prático para diferentes necessidades.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index" aria-hidden="true">02</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 19 6v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>180 dias de garantia</h3>
+            <p>Mais tranquilidade para você, com 180 dias de garantia nos serviços realizados.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index" aria-hidden="true">03</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.5-.5-.5-2.5 2.1-2.1Z"/><path d="m5 20 1 1"/></svg>
+            </div>
+            <h3>Cuidado com seus móveis</h3>
+            <p>Cada serviço é realizado com atenção às peças, ao alinhamento e ao bom funcionamento dos móveis.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index" aria-hidden="true">04</span>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 17 17 3l4 4L7 21l-4-4Z"/><path d="m7 13 2 2M11 9l2 2M15 5l2 2"/></svg>
+            </div>
+            <h3>Atenção aos detalhes</h3>
+            <p>Montagem e regulagens realizadas com foco no acabamento, na organização e na qualidade do resultado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">O que fazemos</p>
+          <h2 class="section-title" id="servicos-title">Serviços de montagem e desmontagem de móveis</h2>
+          <p class="section-lead">Soluções para quem precisa montar, desmontar ou ajustar seus móveis.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-marker" aria-hidden="true">01</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M12 3v18M8 7h.01M16 7h.01M8 17h.01M16 17h.01"/></svg>
+            </div>
+            <h3>Montagem de móveis</h3>
+            <p>Montagem de guarda-roupas, camas, cômodas, mesas, racks, armários convencionais e outros móveis residenciais e comerciais.</p>
+            <ul class="service-tags">
+              <li class="service-tag">Guarda-roupas</li>
+              <li class="service-tag">Camas</li>
+              <li class="service-tag">Cômodas</li>
+              <li class="service-tag">Racks</li>
+              <li class="service-tag">Estantes</li>
+              <li class="service-tag">Mesas</li>
+              <li class="service-tag">Armários</li>
+              <li class="service-tag">Escritório</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <span class="service-marker" aria-hidden="true">02</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h7v7H4zM13 13h7v7h-7z"/><path d="M13 5h6M16 2.5 19 5.5 16 8.5M4 18h7M7.5 15.5 4.5 18.5l3 3"/></svg>
+            </div>
+            <h3>Desmontagem de móveis</h3>
+            <p>Desmontagem cuidadosa de móveis para mudanças, reorganização de ambientes ou outras necessidades.</p>
+            <ul class="service-tags">
+              <li class="service-tag">Mudanças</li>
+              <li class="service-tag">Reorganização</li>
+              <li class="service-tag">Residencial</li>
+              <li class="service-tag">Comercial</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <span class="service-marker" aria-hidden="true">03</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 12h10M9 9h.01M9 15h.01M15 9h.01M15 15h.01"/></svg>
+            </div>
+            <h3>Ajustes e regulagens</h3>
+            <p>Ajustes de portas, gavetas, dobradiças e ferragens para melhorar o alinhamento e o funcionamento dos móveis.</p>
+            <ul class="service-tags">
+              <li class="service-tag">Portas</li>
+              <li class="service-tag">Gavetas</li>
+              <li class="service-tag">Dobradiças</li>
+              <li class="service-tag">Ferragens</li>
+            </ul>
+          </article>
+        </div>
+        <div class="cta-band">
+          <p>Precisa de um desses serviços? Solicite seu orçamento.</p>
+          <a class="btn btn-primary" id="btn-services-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="services" data-service="servicos_geral">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Falar com a LC Montagem
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="container">
+        <div class="experience-panel">
+          <div class="experience-copy">
+            <p class="eyebrow">Experiência e garantia</p>
+            <h2 class="section-title" id="experiencia-title">20 anos de experiência e 180 dias de garantia</h2>
+            <p>Na LC Montagem, a experiência faz parte de cada serviço. São 20 anos trabalhando com montagem e desmontagem de móveis, com atenção aos detalhes e compromisso com a qualidade. Para sua tranquilidade, os serviços contam com 180 dias de garantia.</p>
+            <p class="experience-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 19 6v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+              As condições específicas da garantia são informadas durante o atendimento.
+            </p>
+          </div>
+          <div class="experience-stats">
+            <div class="stat-block"><strong>20</strong><span>anos de experiência</span></div>
+            <div class="stat-block"><strong>180</strong><span>dias de garantia</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="como-solicitar" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Como funciona</p>
+          <h2 class="section-title" id="como-title">Solicitar seu orçamento é simples</h2>
+          <p class="section-lead">Em três passos, você fala com a LC Montagem e recebe as orientações sobre o serviço.</p>
+        </div>
+        <div class="steps">
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">01</div>
+            <h3>Entre em contato</h3>
+            <p>Clique no botão de WhatsApp e fale com a LC Montagem.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">02</div>
+            <h3>Informe os móveis</h3>
+            <p>Envie informações sobre os móveis e, se possível, fotos para facilitar a avaliação.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number" aria-hidden="true">03</div>
+            <h3>Receba as orientações</h3>
+            <p>A equipe verifica as informações e orienta sobre o orçamento e a disponibilidade de atendimento.</p>
+          </article>
+        </div>
+        <div class="steps-cta">
+          <a class="btn btn-primary" id="btn-howto-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="howto" data-service="orcamento_geral">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Solicitar orçamento no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="avaliacoes" aria-labelledby="avaliacoes-title" {{REVIEWS_HIDDEN}}>
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Avaliações</p>
+          <h2 class="section-title" id="avaliacoes-title">O que nossos clientes dizem</h2>
+          <p class="section-lead">Conheça a experiência de quem já contratou nossos serviços.</p>
+        </div>
+        <div class="reviews-grid">
+          {{REVIEWS_CARDS}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="regiao" aria-labelledby="regiao-title">
+      <div class="container">
+        <div class="region-panel">
+          <div class="region-copy">
+            <p class="eyebrow">Área de atendimento</p>
+            <h2 class="section-title" id="regiao-title">Montagem de móveis na Grande São Paulo</h2>
+            <p>A LC Montagem atende clientes na Grande São Paulo, conforme a disponibilidade para cada região. Consulte pelo WhatsApp se há atendimento para seu bairro ou cidade.</p>
+            <ul class="region-chips">
+              <li class="region-chip">Taboão da Serra</li>
+              <li class="region-chip">Carapicuíba</li>
+              <li class="region-chip">Grande São Paulo</li>
+            </ul>
+            <div class="region-actions">
+              <a class="btn btn-primary" id="btn-region-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="region" data-service="consulta_atendimento">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+                Consultar atendimento na minha região
+              </a>
+            </div>
+          </div>
+          <div class="coverage-card">
+            <div class="coverage-visual" aria-hidden="true">
+              <svg viewBox="0 0 280 170" fill="none" focusable="false">
+                <g stroke="currentColor" stroke-width="1">
+                  <circle cx="140" cy="78" r="18" opacity=".9"/>
+                  <circle cx="140" cy="78" r="38" opacity=".35" stroke-dasharray="3 5"/>
+                  <circle cx="140" cy="78" r="60" opacity=".2" stroke-dasharray="2 6"/>
+                  <path d="M58 92c18-22 44-34 82-34 36 0 64 10 82 30" opacity=".25" stroke-dasharray="3 6"/>
+                  <path d="M74 118c20-18 42-26 66-26 26 0 50 8 68 26" opacity=".2" stroke-dasharray="2 6"/>
+                </g>
+                <g fill="currentColor">
+                  <circle cx="140" cy="78" r="4"/>
+                  <circle cx="97" cy="97" r="2.5" opacity=".7"/>
+                  <circle cx="181" cy="63" r="2.5" opacity=".7"/>
+                  <circle cx="158" cy="116" r="2.2" opacity=".5"/>
+                </g>
+              </svg>
+            </div>
+            <ul class="coverage-list">
+              <li class="coverage-item"><strong>Taboão da Serra</strong><span>Região da equipe</span></li>
+              <li class="coverage-item"><strong>Carapicuíba</strong><span>Região da equipe</span></li>
+              <li class="coverage-item"><strong>Grande São Paulo</strong><span>Conforme disponibilidade</span></li>
+            </ul>
+            <p class="coverage-note">A cobertura é confirmada no atendimento, de acordo com a região e a disponibilidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2 class="section-title" id="faq-title">Perguntas frequentes</h2>
+          <p class="section-lead">Informações rápidas sobre os serviços, a garantia e o atendimento.</p>
+        </div>
+        <div class="faq-list">
+          {{FAQ_HTML}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="contato" aria-labelledby="final-title">
+      <div class="container">
+        <div class="final-cta-panel">
+          <p class="eyebrow">Solicite seu orçamento</p>
+          <h2 class="section-title" id="final-title">Precisa de um montador de móveis?</h2>
+          <p>A LC Montagem tem 20 anos de experiência e oferece 180 dias de garantia. Entre em contato e solicite seu orçamento.</p>
+          <div class="final-actions">
+            <a class="btn btn-primary" id="btn-final-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="final" data-service="orcamento_geral">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+              Solicitar orçamento pelo WhatsApp
+            </a>
+          </div>
+          <p class="final-note">Atendimento na Grande São Paulo, conforme disponibilidade.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="LC Montagem — início">
+            <img class="brand-logo" src="assets/img/logo-lc-montagem.png" alt="LC Montagem" width="480" height="185">
+          </a>
+          <p class="footer-slogan">Qualidade que monta confiança.</p>
+          <p>Montagem e desmontagem de móveis. Atendimento na Grande São Paulo, conforme disponibilidade.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Serviços</h2>
+          <ul class="footer-links">
+            <li><a href="#servicos">Montagem de móveis</a></li>
+            <li><a href="#servicos">Desmontagem de móveis</a></li>
+            <li><a href="#servicos">Ajustes e regulagens</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Atendimento</h2>
+          <ul class="footer-links">
+            <li><a href="#regiao">Taboão da Serra</a></li>
+            <li><a href="#regiao">Carapicuíba</a></li>
+            <li><a href="#regiao">Grande São Paulo</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Contato</h2>
+          <p class="footer-contact">
+            WhatsApp
+            <a id="btn-footer-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="footer" data-service="orcamento_geral" aria-label="WhatsApp (11) 93435-2343">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+              {{WHATSAPP_PHONE_DISPLAY}}
+            </a>
+          </p>
+          <ul class="footer-links">
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© {{YEAR}} LC Montagem. Todos os direitos reservados.</span>
+        <span>Qualidade que monta confiança.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="btn-floating-whatsapp" href="{{WHATSAPP_URL}}" target="_blank" rel="noopener noreferrer" data-cta-location="floating" data-service="orcamento_geral" aria-label="Solicitar orçamento pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02ZM12.04 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+    <span>Orçamento</span>
+  </a>
+</body>
+</html>

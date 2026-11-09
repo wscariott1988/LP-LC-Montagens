@@ -1,0 +1,32 @@
+[
+  {
+    "id": "faq-moveis",
+    "question": "Quais móveis a LC Montagem monta?",
+    "answer": "Realizamos montagem de móveis como guarda-roupas, camas, cômodas, mesas, racks, estantes e armários convencionais. Consulte a equipe para confirmar o atendimento ao seu móvel."
+  },
+  {
+    "id": "faq-desmontagem",
+    "question": "A LC Montagem realiza desmontagem para mudanças?",
+    "answer": "Sim. Também realizamos serviços de desmontagem de móveis para mudanças e reorganização de ambientes."
+  },
+  {
+    "id": "faq-ajustes",
+    "question": "Vocês fazem ajustes em portas e gavetas?",
+    "answer": "Sim. Realizamos ajustes e regulagens em portas, gavetas, dobradiças e ferragens, conforme a necessidade de cada móvel."
+  },
+  {
+    "id": "faq-garantia",
+    "question": "Os serviços têm garantia?",
+    "answer": "Sim. A LC Montagem oferece 180 dias de garantia nos serviços. Consulte as condições durante o atendimento."
+  },
+  {
+    "id": "faq-regiao",
+    "question": "Vocês atendem toda a Grande São Paulo?",
+    "answer": "Atendemos diferentes regiões da Grande São Paulo, conforme disponibilidade. Entre em contato para consultar seu bairro ou cidade."
+  },
+  {
+    "id": "faq-orcamento",
+    "question": "Como faço para solicitar um orçamento?",
+    "answer": "Basta clicar em um dos botões de WhatsApp, informar o serviço desejado e enviar detalhes dos móveis."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "environment": "production",
+  "brand": "LC Montagem",
+  "slogan": "Qualidade que monta confiança.",
+  "domain": "https://lc.grupows.com",
+  "locale": "pt_BR",
+  "whatsapp": {
+    "phone": "5511934352343",
+    "phoneDisplay": "(11) 93435-2343",
+    "message": "Olá, te encontrei no Google e gostaria de um orçamento."
+  },
+  "seo": {
+    "title": "Montador de Móveis na Grande São Paulo | LC Montagem",
+    "description": "Montagem e desmontagem de móveis na Grande São Paulo. 20 anos de experiência, ajustes e regulagens e 180 dias de garantia. Solicite seu orçamento.",
+    "keywords": "montador de móveis, montagem de móveis, desmontagem de móveis, montador de móveis em São Paulo, montador de móveis na Grande São Paulo, montagem de guarda-roupas, ajustes de móveis, regulagem de portas e gavetas",
+    "ogImage": "/assets/og/lc-montagem-og.png"
+  },
+  "analytics": {
+    "enabled": false,
+    "gtmId": "",
+    "ga4Id": "",
+    "googleAdsId": "",
+    "googleAdsConversionLabel": ""
+  }
+}
